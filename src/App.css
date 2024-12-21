@@ -1,0 +1,139 @@
+/* hader */
+nav{
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+nav .navbar-brand{
+  display: inline-block;
+ text-shadow: 0 5px 5px rgba(0,0, 0,0.4);
+}
+nav .navbar-brand span{
+  display: inline-block;
+  animation: animate2 2s linear infinite;
+}
+@keyframes animate2{
+    0%{
+       transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-3px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+}
+nav .nav-item{
+   margin-right: 20px;
+}
+nav .nav-item{
+  color: #fff;
+}
+nav .nav-item .nav-link{
+  padding: 0 !important;
+  text-decoration: none;
+  color: #fff !important;
+}
+nav .nav-item .nav-link:hover{
+  text-decoration: none;
+}
+nav .nav-item a{
+  color: #fff;
+}
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: none;
+}
+nav .active{
+  color:brown;
+  font-weight: 700;
+}
+.navbar-nav .dropdown-menu{
+  padding: 10px;
+  border-bottom: 2px solid orange;
+}
+nav .dropdown:hover{
+  display: block !important;
+}
+.navbar-nav .dropdown-menu a{
+  color: #151515;
+}
+.navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu{
+  display: block !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu:hover{
+  display: block !important;
+}
+/* banner */
+.banner{
+  position: relative;
+}
+.banner .carousel-caption{
+  text-align: left;
+  left: 9%;
+  bottom: 120px;
+  position: absolute;
+  z-index: 2;
+}
+.banner .carousel-caption p{
+  width: 65%;
+}
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.navbar.fixed {
+  background-color: #3061e7; /* Blue background */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .navbar.transparent {
+  background-color: transparent;
+  color: black;
+} */
+
+.banner .carousel-item{
+  position: relative;
+}
+.banner .carousel-item::before{
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0, 0,0.4);
+  z-index: 1;
+}
+
+/*  top bottom button */
+.topBottom{
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  text-align: center;
+  background-color: #1bf8b6;
+  color: #fff;
+  width: 35px;
+  line-height: 45px;
+  height: 35px;
+  box-shadow: 0 5px 5px -3px rgba(0,0, 0,0.4);
+  z-index: 999;
+  cursor: pointer;
+}
+.topBottom svg{
+  text-align: center;
+  font-size: 20px;
+  animation: animate2 4s linear infinite;
+}
